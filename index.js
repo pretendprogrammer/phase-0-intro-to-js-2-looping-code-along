@@ -12,14 +12,15 @@ wrapGifts(gifts);
 
 function writeCards(names,occasion) {
     let i = 0;
+    let newArray = []
     while (i < names.length) {
-        console.log(`Thank you ${names[i]} for the amazing ${occasion} gift!`)
+        newArray.push(`Thank you, ${names[i]}, for the wonderful ${occasion} gift!`)
         i++;
     }
-    return gifts;
+    return newArray;
 }
 
-writeCards(["Ada", "Brendan", "Ali"], "birthday");
+writeCards(["Lisa", "Kaitlin", "Jan"], "surprise");
 
 function countDown(num) {
     while (!(num < 0)) {
